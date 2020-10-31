@@ -6,7 +6,7 @@
 
     <groupId>org.senolab</groupId>
     <artifactId>ReportingTool</artifactId>
-    <version>0.0.1-BETA</version>
+    <version>0.0.5-BETA</version>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.senolab.ccucli.App</mainClass>
+                            <mainClass>org.senolab.reportingtool.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

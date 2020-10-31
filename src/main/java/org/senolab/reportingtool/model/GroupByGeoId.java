@@ -23,10 +23,10 @@ public class GroupByGeoId {
             System.out.println("Processing file from "+inputDir.getAbsolutePath());
             files = inputDir.listFiles();
         } else {
-            throw new NotADirectoryException("You specify the input directory which does not exist!");
+            throw new NotADirectoryException("[GroupByGeoId] You specify the input directory which does not exist!");
         }
         if(!outputDir.isDirectory()) {
-            throw new NotADirectoryException("You specify the output directory which does not exist!");
+            throw new NotADirectoryException("[GroupByGeoId] You specify the output directory which does not exist!");
         }
         System.out.println("Output file will be stored in "+outputDir.getAbsolutePath());
     }
