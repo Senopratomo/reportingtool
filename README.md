@@ -32,6 +32,28 @@ The current available commands: (this will be updated as more command become ava
       $reportutil groupbygeoid
       </code>
    </li>
+   <li>
+      sumthiscolumn<br>
+      The 'sumthiscolumn' command will take a directory or folder containing CSV file(s), number of column in each row,
+      comma-separated list of number representing the column within those files which need to be sum up.   
+      After summing up all values in the aforementioned column, it will write the total in the 
+      last line of the file(s).<br>
+      For instruction on how to use it, run:<br>
+      <code>
+      $reportutil sumthiscolumn
+      </code>
+   </li>
+   <li>
+      deletelastline<br>
+      The 'deletelastline' command accept one argument which is the directory where the file(s) located.
+      It will delete only the last line of all file(s) in the directory specified.
+      Recommended use is in tandem with 'sumthiscolumn' command which add last line with total of all numbers
+      in the column.<br>
+      For detail instruction on how to use it, run:<br>
+      <code>
+      $reportutil sumthiscolumn
+      </code>
+   </li>
 </ul>
 <br>
 <h5>Sample Usage</h5>
@@ -43,6 +65,23 @@ The current available commands: (this will be updated as more command become ava
     Command:<br>
     <code>
     $reportutil groupbygeoid /home/user/inputdir /home/user/outputdir/
+    </code>
+    </li>
+    <li>
+    Scenario:<br>
+    Sum first and second column in all files where each line within the each file contain 5 columns 
+    (means 5 number-values separated by comma) within directory /home/user/input<br>
+    Command:<br>
+    <code>
+    $reportutil sumthiscolumn /home/user/input 5 0,1
+    </code>
+    </li>
+    <li>
+    Scenario:<br>
+    Delete last line of all files within /home/user/input<br>
+    Command:<br>
+    <code>
+    $reportutil deletelastline /home/user/input
     </code>
     </li>
        

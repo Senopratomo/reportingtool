@@ -39,7 +39,16 @@ public class InstructionsUtil {
                comma-separated list of number representing the column within those files which need to be sum up.   
                After summing up all values in the aforementioned column, it will write the total in the 
                last line of the file(s).
-               $reportutil sumthiscolumn 
+               For detail instruction on how to use it, run:
+               $reportutil sumthiscolumn
+            
+            3. deletelastline
+               The 'deletelastline' command accept one argument which is the directory where the file(s) located.
+               It will delete only the last line of all file(s) in the directory specified.
+               Recommended use is in tandem with 'sumthiscolumn' command which add last line with total of all numbers
+               in the column.
+               For detail instruction on how to use it, run:
+               $reportutil sumthiscolumn    
             
             Any issues or improvement request, feel free to file one under the Github repo
             
